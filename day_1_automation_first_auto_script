@@ -1,0 +1,31 @@
+import requests
+
+url = "https://jsonplaceholder.typicode.com/users"
+response = requests.get(url)
+
+if response.status_code == 200:
+
+    users = response.json()
+
+    for user in users:
+        email = user["email"]
+        firma = user["company"]["name"]
+        navn = user["name"]
+        adresse = user["address"]["suite"]
+    
+        is_gold_lead = ".biz" in email or "Group" in firma
+
+        if is_gold_lead:
+            print(f"  GULD-LEAD FUNDET!")
+            print(f"  navn: {navn}")
+            print(f"  firma: {firma}")
+            print(f"  email: {email}")
+            print(f"  adresse: {adresse}")
+            print("-" * 30)
+
+    print("\n--- SØGNING AFSLUTTET ---")
+
+else:
+    print("Kunne ikke finde")
+
+
