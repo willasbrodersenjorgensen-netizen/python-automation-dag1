@@ -10,13 +10,12 @@ from email.mime.multipart import MIMEMultipart
 from oauth2client.service_account import ServiceAccountCredentials
 
 # --- KONFIGURATION (Tjek disse!) ---
-AFSENDER_MAIL = "willasbrodersenjorgensen@gmail.com" 
-APP_KODE = "ppad ctiw znta tine" 
-CREDS_FILE = r'C:\Users\mormo\Desktop\Maschine Learning\automation\json_data\creds.json'
-JSON_DATA_STIG = r'C:\Users\mormo\Desktop\Maschine Learning\automation\json_data\users.json'
-SHEET_NAVN = "mine leads"
-SHEET_ID = '1NAEvrMHo8Mp3KofyYjdz-TjfO2mjBgsVW77jYQNyOWo'
-
+AFSENDER_MAIL = 
+APP_KODE = 
+CREDS_FILE = 
+JSON_DATA_STIG = 
+SHEET_NAVN = 
+SHEET_ID = 
 
 
 SCOPE = [
